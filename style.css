@@ -42,9 +42,10 @@ h2 {
 
 .all-card-wrapper {
   padding-top: 61px;
-  height: 100%;
+  padding-inline: 30px;
   display: flex;
   gap: 38px;
+  flex-wrap: wrap;
   position: relative;
 }
 
@@ -68,4 +69,38 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+@media (max-width: 940px) {
+  .card-wrapper:nth-child(even) {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    padding-top: 20px;
+    font-size: 30px;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 940px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 808px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 808px) {
+  .all-card-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
