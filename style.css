@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
 h1 {
   padding-top: 78px;
   font-size: 51.698px;
@@ -27,7 +36,7 @@ h2 {
 }
 
 .body-wrapper {
-  min-height: 100vh;
+  min-height: 100%;
   background-color: #1d1d1d;
   color: white;
   display: flex;
@@ -44,6 +53,7 @@ h2 {
   padding-top: 61px;
   padding-inline: 30px;
   display: flex;
+  min-height: 55vh;
   gap: 38px;
   flex-wrap: wrap;
   position: relative;
@@ -71,7 +81,14 @@ h2 {
   gap: 6px;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1010px) {
+  .card-wrapper:nth-child(even) {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-height: 750px) {
   .card-wrapper:nth-child(even) {
     position: relative;
     top: 0;
