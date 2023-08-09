@@ -50,8 +50,7 @@ h2 {
 }
 
 .all-card-wrapper {
-  padding-top: 61px;
-  padding-inline: 30px;
+  padding: 30px 61px;
   display: flex;
   min-height: 55vh;
   gap: 38px;
